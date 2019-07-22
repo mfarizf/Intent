@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    tools:context=".lat2">
+
+        <TextView
+            android:id="@+id/lb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ketik disini" />
+
+        <EditText
+            android:id="@+id/masuk_teks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lb1" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/masuk_teks"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip"
+            android:text="OK" />
+
+        <Button
+            android:id="@+id/batal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/masuk_teks"
+            android:layout_toLeftOf="@+id/ok"
+            android:layout_marginLeft="10dip"
+            android:text="Batal" />
+
+</RelativeLayout>
