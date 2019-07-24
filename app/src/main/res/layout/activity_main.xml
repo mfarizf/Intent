@@ -34,5 +34,26 @@
         android:layout_margin="10dp"
         android:text="Tugas 2" />
 
+    <Button
+        android:id="@+id/lat_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Latihan Table Layout"/>
+
+    <Button
+        android:id="@+id/lat1_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Latihan 1 Frame Layout"/>
+
+    <Button
+        android:id="@+id/lat2_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Latihan 2 Frame Layout"/>
+
 
 </LinearLayout>

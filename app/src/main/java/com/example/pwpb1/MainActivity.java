@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button tugas1, tugas2, lat1, lat2;
+    private Button tugas1, tugas2, lat1, lat2, latTable, lat1Frame, lat2Frame;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         lat1.setOnClickListener(this);
         lat2 = findViewById(R.id.lat2);
         lat2.setOnClickListener(this);
+        latTable = findViewById(R.id.lat_table);
+        latTable.setOnClickListener(this);
+        lat1Frame = findViewById(R.id.lat1_frame);
+        lat1Frame.setOnClickListener(this);
+        lat2Frame = findViewById(R.id.lat2_frame);
+        lat2Frame.setOnClickListener(this);
     }
 
     @Override
@@ -42,6 +48,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.lat2:
                 Intent lat2Intent = new Intent(this, lat2.class);
                 startActivity(lat2Intent);
+                break;
+            case R.id.lat_table:
+                Intent latTableIntent = new Intent(this, LatTableLayout.class);
+                startActivity(latTableIntent);
+                break;
+            case R.id.lat1_frame:
+                Intent lat1frameIntent = new Intent(this, Lat1_Frame.class);
+                startActivity(lat1frameIntent);
+                break;
+            case R.id.lat2_frame:
+                Intent lat2frameIntent = new Intent(this, Lat2_Frame.class);
+                startActivity(lat2frameIntent);
                 break;
         }
     }
