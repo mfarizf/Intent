@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button tugas1, tugas2, lat1, lat2, latTable, lat1Frame, lat2Frame;
+    private Button tugas1, tugas2, lat1, lat2, latTable, lat1Frame, lat2Frame, latGrid, latCons;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         lat1Frame.setOnClickListener(this);
         lat2Frame = findViewById(R.id.lat2_frame);
         lat2Frame.setOnClickListener(this);
+        latGrid= findViewById(R.id.lat_grid);
+        latGrid.setOnClickListener(this);
+        latCons = findViewById(R.id.lat_constraint);
+        latCons.setOnClickListener(this);
     }
 
     @Override
@@ -60,6 +64,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.lat2_frame:
                 Intent lat2frameIntent = new Intent(this, Lat2_Frame.class);
                 startActivity(lat2frameIntent);
+                break;
+            case R.id.lat_grid:
+                Intent latGridIntent = new Intent(this, LatGridLayout.class);
+                startActivity(latGridIntent);
+                break;
+            case R.id.lat_constraint:
+                Intent latConsIntent = new Intent(this, LatCons.class);
+                startActivity(latConsIntent);
                 break;
         }
     }

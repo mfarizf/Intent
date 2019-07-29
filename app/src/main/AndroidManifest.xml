@@ -10,7 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Lat2_Frame"></activity>
+        <activity android:name=".LatCons"></activity>
+        <activity android:name=".LatGridLayout" />
+        <activity android:name=".Lat2_Frame" />
         <activity android:name=".Lat1_Frame" />
         <activity android:name=".LatTableLayout" />
         <activity android:name=".lat2" />
