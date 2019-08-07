@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button lat1, lat1Frame, lat2Frame, latGrid, latCons;
+    private Button lat1, lat2Frame, latGrid, latCons;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
