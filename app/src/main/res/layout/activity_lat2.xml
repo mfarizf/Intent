@@ -36,5 +36,13 @@
             android:layout_toLeftOf="@+id/ok"
             android:layout_marginLeft="10dip"
             android:text="Batal" />
+        <Button
+            android:id="@+id/tuglat1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerInParent="true"
+            android:text="Tugas 1" />
+
 
 </RelativeLayout>

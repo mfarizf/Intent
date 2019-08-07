@@ -60,6 +60,13 @@
             android:layout_marginTop="10dp"
             android:text="Daftar" />
 
+        <Button
+            android:id="@+id/lat_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Latihan Table Layout" />
+
     </LinearLayout>
 
 </LinearLayout>
